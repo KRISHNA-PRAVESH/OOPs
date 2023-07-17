@@ -1,13 +1,13 @@
 
-class Employee{
+class Employee1{
     private String name;
     private String company;
     private int age;
 
-    public Employee() {
+    public Employee1() {
     }
 
-    public Employee(String name, String company, int age) {
+    public Employee1(String name, String company, int age) {
         this.name = name;
         this.company = company;
         this.age = age;
@@ -40,7 +40,7 @@ class Employee{
 public class Main {
     public static void main(String[] args) {
 
-        Employee employee1 = new Employee(); //a variable of type Employee which will be stored in the heap memory
+        Employee1 employee1 = new Employee1(); //a variable of type abstraction.Employee which will be stored in the heap memory
         //Every instance will have a hashcode in the heap memory
         //The constructor is invoked whenever new is used.
         //new ->invokes constructor and tells jvm to allocate memory for object in the heap, amount of memory allocated depends on the class
