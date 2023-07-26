@@ -6,8 +6,6 @@ interface DatabaseConnection {
     void executeQuery(String query);
     void disconnect();
 
-
-
 }
 
 // Implementation of a Database Connection for MySQL
@@ -38,6 +36,7 @@ class PostgreSQLConnection implements DatabaseConnection {
     @Override
     public void executeQuery(String query) {
         System.out.println("Executing PostgreSQL query: " + query);
+
     }
 
     @Override
@@ -66,6 +65,7 @@ public class InterfaceDemo {
         postgresqlConnection.connect();
         postgresqlConnection.executeQuery("SELECT * FROM customers");
         postgresqlConnection.disconnect();
+
     }
 }
 
